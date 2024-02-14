@@ -4,10 +4,7 @@
     border: none;
 }
 
-body{
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .login-wrapper{
     width: 400px;
@@ -35,6 +32,7 @@ body{
     margin-bottom: 16px;
     border-radius: 6px;
     background-color: #F8F8F8;
+    
 }
 #login-form > input::placeholder{
     color: #D2D2D2;
@@ -44,6 +42,12 @@ body{
     font-size: 16px;
     background-color: #268dce;
     margin-top: 20px;
+
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  
 }
 
 #login-form > input[type="checkbox"]{
@@ -58,19 +62,50 @@ body{
     background-image: url("checkbox.png");
     background-repeat: no-repeat;
     background-size: contain;
+
 }
 #login-form input[type="checkbox"]:checked + label{
     background-image: url("checkbox-active.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+#signup-link {
+   margin-left: 70px;
+    color: #999;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
+#remember-check {
+    color: #999;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
+.login-set:hover{
+    background-color: #1f76ac !important; 
+}
+
 @media screen and (max-width: 480px) {
     body{
         width: 90vw;  /* 화면 너비의 90% */
         height: 50vh;  /* 화면 높이의 90% */
     }
+    .topbar-login {
+        display: flex;  /* flexbox를 사용하여 자식 요소들을 가운데 정렬합니다. */
+        justify-content: center;  /* 가로 방향으로 중앙 정렬합니다. */
+        align-items: center;  /* 세로 방향으로 중앙 정렬합니다. */
+    }
     .sprint-logo {
-       
+        position: absolute; /* 이미지 위치를 절대 위치로 설정합니다. */
+        top: 100%; /* 이미지를 상위 요소의 중앙으로 이동합니다. */
+        left: 50%; /* 이미지를 상위 요소의 중앙으로 이동합니다. */
+        transform: translate(-50%, -50%); /* 이미지의 중심점을 상위 요소의 중앙으로 이동합니다. */
+        cursor: pointer;  /* 이미지에 마우스를 올리면 포인터로 변경되게 합니다. */
+
+        width: 80% !important;
+        height: AUTO !important;
     }
 }
 /* -------------------------------------------------------------social-------------------------------------------------- */
