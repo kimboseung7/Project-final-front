@@ -35,3 +35,5 @@ document.querySelector('.fa-regular.fa-heart').addEventListener('click', functio
     event.stopPropagation(); // 상위 요소로 이벤트 전파를 막음
     // 하트 클릭 시 수행할 동작을 여기에 작성하세요
 });
+
+
