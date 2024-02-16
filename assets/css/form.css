@@ -54,7 +54,7 @@
     align-items: center;
 }
 
-/* 공지사항 상세 정보 텍스트 스타일링 */
+/* 상세 정보 텍스트 스타일링 */
 .notice-detail-info {
     margin-top: 10px;
     font-size: 14px;
@@ -78,7 +78,7 @@
     pointer-events: auto;
     
 }
-.heartBtn i {
+.i {
     font-size: 24px; /* 아이콘 크기를 24px로 설정 */
 }
 .people-info{

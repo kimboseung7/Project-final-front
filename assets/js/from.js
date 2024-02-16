@@ -1,16 +1,5 @@
 var count = 0;
 var isLiked = false;
-
-function countPlus() {
-    count = count + 1;
-    document.querySelector(".like_count").innerText = "좋아요 " + count + "개";
-}
-
-function countMinus() {
-    count = count - 1;
-    document.querySelector(".like_count").innerText = "좋아요 " + count + "개";
-}
-
 function addLike() {
     const pushHeartBtn = document.querySelector(".heartBtn");
     if (!isLiked) {
@@ -21,6 +10,24 @@ function addLike() {
         countMinus();
     }
     isLiked = !isLiked;
+}
+//detail.html이면 아래코드 시행
+function countPlus() {
+    count = count + 1;
+    if (window.location.pathname.includes('detail.html')) {
+        document.querySelector(".like_count").innerText = count;
+    } else {
+        document.querySelector(".like_count").innerText = "좋아요 " + count;
+    }
+}
+
+function countMinus() {
+    count = count - 1;
+    if (window.location.pathname.includes('detail.html')) {
+        document.querySelector(".like_count").innerText = count;
+    } else {
+        document.querySelector(".like_count").innerText = "좋아요 " + count + "개";
+    }
 }
 
 document.querySelector(".heartBtn").addEventListener("click", addLike);
