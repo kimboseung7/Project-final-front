@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/login.css">
     <!-- =========================================================================== -->
     <script src="https://kit.fontawesome.com/fc8d331d05.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
     <div class="topbar-login">
@@ -17,7 +18,7 @@
     </div>
     <div class="login-wrapper">
         <h2>Register</h2>
-        <form method="post" action="서버의url" id="login-form">
+        <form th:action="@{/register}" th:method="post" id="login-form">
             <input type="text" name="userName" placeholder="Email">
             <input type="password" name="userPassword" placeholder="Password">
             <input class="login-set" type="submit" value="회원가입">

@@ -70,7 +70,10 @@
             <input id="comment-input" placeholder="댓글을 입력해 주세요.">
             <button id="submit" onclick="registerComment()">등록</button>
         </div>
-        <div class="content-comment-list"></div>
+        <div class="content-comment-list" id="content-comment-list">
+
+        </div>
+        
     </div>
 </body>
 </html>
@@ -84,7 +87,7 @@
 
     function showComment(){
          var board = [[${dto}]];
-         let comment_div = $('#commentdiv');
+         let comment_div = $('#content-comment-list');
 
           $.ajax({
            type: "GET",
