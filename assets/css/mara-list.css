@@ -27,7 +27,7 @@
 .img-container{
     width: 100%;
     overflow: hidden; /* 이미지가 컨테이너를 넘치지 않도록 */
-    border-radius: 15px 15px 0 0; /* 이미지에 라운드한 모서리 적용 */
+    
 }
 
 .m-title{
@@ -38,16 +38,15 @@
 }
 
 .m-title h3{
-    margin: 1rem;
+    margin: 20px;
     color: #444; /* h2 태그 색상 변경 */
 }
 
 .notice-first-info{
     width: 90%;
     display: flex;
-    align-items: center;
-    padding: 1rem; /* 패딩 추가 */
-    border-top: 1px solid #eee; /* 상단 테두리 추가 */
+    justify-content: center;
+    padding: 20px; /* 패딩 추가 */
     gap: 20px;
 }
 
@@ -74,11 +73,10 @@ i {
 }
 .info-container{
     width: 90%;
-    height: 20%;
-    margin: 13px;
+    margin: 15px;
     display: flex;
     align-items: center;
-    gap: 20px; /* 아이템 간 간격 조정 */
+    gap: 15px; /* 아이템 간 간격 조정 */
   
 }
 .comment-count{

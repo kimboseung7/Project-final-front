@@ -20,7 +20,8 @@ div{
     align-items: center;
     box-sizing: border-box; 
     background-color: white;
-    border: 1px solid black;
+    
+    
 }
 
 /* Content styles */
@@ -28,6 +29,7 @@ div{
     width: 100%;
     align-items: center;
     border-bottom: 1px solid #000;
+   
 }
 .content-post{
     width: 100%;
@@ -109,6 +111,9 @@ i {
     align-items: center;
     margin-top: 20px;
     padding: 10px;
+    margin-bottom: 20px;
+    
+    
 }
 
 /* Comment input styles */
