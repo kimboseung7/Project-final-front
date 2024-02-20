@@ -5,6 +5,7 @@
 .body {
     margin: 0;
     padding: 0;
+
 }
 /* 공지사항 컨테이너 스타일링 */
 .notice-l-container {
@@ -104,6 +105,4 @@
     font-size: 18px;
    
 }
-
-
 
