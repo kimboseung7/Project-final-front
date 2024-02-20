@@ -36,9 +36,6 @@ div{
     align-items: center;
   
 }
-.content-post{
-    width: 100%;
-}
 
 /* First notice styles */
 .notice-first-info{
@@ -60,6 +57,11 @@ div{
 .notice-detail-info{
     font-size: 14px;
     color: #333333;
+}
+
+.map-post{
+
+    margin: 20px;
 }
 
 /* Flexbox styles */
@@ -95,8 +97,6 @@ i {
 .bottom-logo-info{
     pointer-events: none;
     display: flex; 
-    height: 20%;
-    display: flex;
     padding-bottom: 10px;
     border-bottom: 1px solid #000;
 }

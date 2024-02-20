@@ -48,8 +48,7 @@
     
 }
 .h3 title {
-    margin: 0;
-    !important;
+    margin: 0 !important;
 }
 /* 아이콘과 텍스트를 포함하는 박스 스타일링 */
 .flex {
