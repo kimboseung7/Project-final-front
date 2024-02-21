@@ -18,7 +18,7 @@
     </div>
     <div class="login-wrapper">
         <h2>Login</h2>
-        <form method="post" action="서버의url" id="login-form">
+        <form method="post" action="@{/login}" id="login-form">
             <input type="text" name="username" placeholder="Email">
             <input type="password" name="Password" placeholder="Password">
 
@@ -26,7 +26,7 @@
                  <label for="remember-check">
                 <input type="checkbox" id="remember-check"> 아이디 저장하기
                 </label>
-                <a href="register.html" id="signup-link">회원가입</a>
+                <a href="/register" id="signup-link">회원가입</a>
                 
                 
                 <input class="login-set" type="submit" value="로그인">

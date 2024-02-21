@@ -5,36 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="assets/css/form-register.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
 </head>
 <body>
     <div class="full">
-    <div class="form-wrapper">
-        <div class="container">
-            <div class="form-title">
-                <label>제목</label>
-                <input type="text" class="form-control" id="form-title" name="title" placeholder="제목을 입력해주세요">
-            </div>
+        <div class="form-wrapper">
+            <form class="container"> <!-- form 태그 추가 -->
+                <div class="form-title">
+                    <label>제목</label>
+                    <input type="text" class="form-control" id="form-title" name="title" placeholder="제목을 입력해주세요">
+                </div>
 
-            <div class="form-time">
-            <label>일시</label>
-            <input type="date">
-            </div>
+                <div class="form-time">
+                <label>일시</label>
+                <input type="date">
+                </div>
 
-            <div class="form-location">
-            <label>위치</label>
-            <input type="text" class="form-control" id="form-location" name="location" placeholder="위치를 입력해주세요">
-            </div>
+                <div class="form-location">
+                <label>위치</label>
+                <input type="text" class="form-control" id="form-location" name="location" placeholder="위치를 입력해주세요">
+                </div>
 
-            <div class="form-content">
-            <label>내용</label>
-            <textarea type="text" class="form-control" id="form-content" name="content" rows="10"></textarea>
-            </div>
-            </div>
+                <div class="form-content">
+                <label>내용</label>
+                <textarea type="text" class="form-control" id="form-content" name="content" rows="10"></textarea>
+                </div>
 
-            <input type="submit" id="submit" value="등록">
+                <input type="submit" id="submit" value="등록"> <!-- submit 버튼을 form 태그 내로 이동 -->
+            </form> <!-- form 태그 닫기 -->
         </div>
-    </div>
-    </div>
+    </div> <!-- full 태그 닫기 -->
 </body>
 </html>
